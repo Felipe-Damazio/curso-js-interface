@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon/favicon-16x16.png" type="image/x-icon">
+    <title>Tarefa 2</title>
+</head>
+
+<body>
+
+    <img src="imagens/23-237508_html5-imagem-de-html-5-hd-png-download.png">
+
+    <h1>Exercitando com HTML5</h1>
+    <h2>Falando um pouco de <i>Tags</i> em HTML.</h2>
+    <pre>
+        Recapitulando o que são tags Html?
+
+As tags são usadas para informar ao navegador a estrutura do site. 
+
+Ou seja: quando se escreve um código em Html, as tags serão interpretadas pelo navegador, produzindo assim a estrutura e o conteúdo visual da página.
+
+A principal característica das tags é estarem sempre dentro dos sinais de chevron (sinal de “maior que” e “menor que”), ou seja: **< >**.
+
+As tags HTML são divididas em dois tipos: as que precisam de fechamento e as que não precisam de fechamento. 
+
+As tags que precisam de fechamento possuem a sintaxe **&lt;tag&gt;** **&lt;/tag&gt;**, já as que não precisam de fechamento possuem como estrutura **&lt;/tag&gt;**.
+
+Além disso, uma mesma tag pode receber um ou mais atributos, que possuirá um valor que modifica sua estrutura ou funcionalidade.
+    </pre>
+    <h1 id="h1">Tags HTML de título</h1>
+    <p>
+        As tags de título possuem valor semântico, variando entre seis níveis hierárquicos. Para definir títulos,
+        utilizamos as tags:
+    <h1 class="H1">Curso JavaScript Interface Sistem &lt;H1&gt;</h1>
+    <h2 class="H2">Curso JavaScript Interface Sistem&lt;H2&gt;</h2>
+    <h3>Curso JavaScript Interface Sistem&lt;H3&gt;</h3>
+    <h4>Curso JavaScript Interface Sistem&lt;H4&gt;</h4>
+    <h5>Curso JavaScript Interface Sistem&lt;H5&gt;</h5>
+    <h6>Curso JavaScript Interface Sistem&lt;H6&gt;</h6>
+    </p>
+    <h1 id="T1">Tags HTML de texto</h1>
+    <p>
+        As tags de texto definem textos, estilos de fonte, parágrafos, spans, quebras de linhas, etc. Vamos
+        conhecê-las:<br>
+
+        - **&lt;p&gt;&lt;/p&gt;** – Principal tag de texto, compõe um parágrafo;<br><br>
+        - **&lt;span&gt;&lt;/span&gt;** – Apesar de ter uma funcionalidade e características parecidas com os
+        parágrafos, costumam ser utilizadas apenas para pequenas informações, como legendas de um formulário, legendas
+        de uma imagem, etc. Também pode ser utilizada para formar um container;<br><br>
+        - **&lt;pre&gt;&lt;/pre&gt;** – Tag utilizada para representar texto pré-formatado.Muito utilizada para inserir
+        códigos;<br><br>
+        - **&lt;b&gt;&lt;/b&gt;** –<b>Transforma o conteúdo em negrito;</b><br><br>
+        - **&lt;i&gt;&lt;/i&gt;** –<i>Transforma o conteúdo em itálico;</i><br><br>
+        - **&lt;br/&gt;** – Essa tag não necessita de fechamento, ela executa a função de quebra de linha.<br><br>
+        - **&lt;hr/&gt;** – Essa tag não necessita de fechamento, ela forma uma linha horizontal.<br>
+        <hr color="blue">
+    </p>
+    <h1 id="T2">Tag de link HTML</h1>
+    <p>
+        A tag de **link HTML** é responsável que faz a ligação entre um documento e outro, sendo ele da mesma página ou
+        de uma página de outro domínio. Esse elemento garantiu que o HTML se destacasse, e moldou a internet da forma
+        que ela é hoje! Portanto, é o principal fundamento que forma a web.<br>
+        Para realizar um link, podemos chamar as tags **&lt;a&gt;&lt;/a&gt;** com o atributo href.<br> Por exemplo, caso
+        você queira criar um link no seu texto que redirecione à página inicial do google:
+    </p>
+    <p>Para acessar o Google, <a href="https://www.google.com">clique aqui.</a></p>
+    <span>Meu jogo favorito,<a href="https://www.ubisoft.com/pt-br/game/rainbow-six/siege">Link</a></span>
+
+    <h1 id="T3">Tags HTML de multimídia</h1>
+    <p>As tags de multimídia servem para incluir imagens, vídeos, áudios, iframes e outros tipos de conteúdo
+        multimídia.</p><br>
+    <div class="img-js">
+        <p style="width:500px;">
+            &lt;IMG&gt; Essa tag não necessita de fechamento, serve para incluir uma imagem ao seu texto. A partir dessa
+            tag, utilizamos o atributo src=”” onde deve ser digitado o local em que a imagem se encontra. Também é muito
+            utilizado em conjunto com o atributo alt para definir o texto alternativo da imagem.<br>
+            Por exemplo:<br>
+            &lt;img src="imagens/t01b441a9e480a98ac8.png" alt="imagem título da página"&gt;<br>
+        </p>
+        <img src="imagens/t01b441a9e480a98ac8.png" alt="imagem título da página">
+    </div>
+    <h1 id="T4">&lt;video&gt; e &lt;audio&gt;</h1>
+    <p>
+        Essa tag serve para indicar a inserção de um vídeo. Com isso, devemos colocar alguns atributos dentro da tag
+        para poder ativar o controle, a principal dela é o controls. Posteriormente, incluímos a
+        tag **&lt;source&gt;** com os atributos **src** e **type**, onde receberão o local em que está o vídeo e o tipo
+        do vídeo. É recomendado utilizar mais de um tipo de source do mesmo vídeo, para garantir maior possibilidade de
+        compatibilidade com o navegador. Finalmente, podemos incluir uma mensagem que será renderizada apenas se o
+        navegador do usuário não suportar a tag video.<br>
+        Diante disso, vejamos os exemplos a seguir:<br>
+        <video controls>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+            Seu navegador não possui suporte para Vídeos.
+        </video><br>
+        &lt;video controls&gt;
+        &lt;source src="video.mp4" type="video/mp4"&gt;
+        &lt;source src="video.ogg" type="video/ogg"&gt;
+        Seu navegador não possui suporte para Vídeos.
+        &lt;/video&gt;<br><br><br>
+        <iframe width="853" height="480" src="https://www.youtube.com/embed/SDAr3NIbIVM" title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+    </p>
+    <h1 id="T5">Tags HTML de listas</h1>
+    <p>
+        **Para poder criar** uma lista, podemos utilizar uma lista ordenada, a partir das
+        tags **&lt;ol&gt;&lt;/ol&gt;**, ou uma lista não ordenada, a partir das tags **&lt;ul&gt;&lt;/ul&gt;**.
+        Posteriormente, incluímos dentro da lista os elementos da mesma, dentro das tags **&lt;li&gt;&lt;/li&gt;**.<br>
+        Vejamos os exemplos a seguir:<br>
+    <p>Minha lista de filme preferido:</p>
+    <ol>
+        <li>Velozes e Furiosos</li>
+        <li>Senhor dos Aneis</li>
+        <li>Narnia</li>
+    </ol>
+    <p>Minha lista de jogos preferidos:</p>
+    <ul>
+        <li>Rainbow-Six</li>
+        <li>Need For Speed</li>
+        <li>Tomb Raiden</li>
+    </ul>
+    </p>
+    <h1 id="T6">Tags HTML de formulário</h1>
+    <p>
+        As tags de formulário são muito utilizadas para obter informações do usuário, realizar cadastros, receber
+        opiniões, entre outros. São importantíssimas para qualquer ramo do mercado.<br>
+        Para iniciar um formulário, incluimos as tags **&lt;form&gt;** e **&lt;/form&gt;**. Posteriormente, devemos
+        incluir o conteúdo do formulário. Digamos que, por exemplo, você queira incluir três campos, sendo dois para
+        coletar informações e um para receber uma mensagem. Desta forma, para criar os campos de preenchimento, deverá
+        utilizar a tag **&lt;input&gt;**, enquanto para o campo referente à mensagem, deverá utilizar a
+        tag **&lt;textarea&gt;**.<br><br>
+    <h2>Tag &lt;imput&gt;</h2>
+    <p>
+        A tag **&lt;input&gt;** possui o atributo **type**, que varia entre diversos tipos (vamos explicar os principais
+        deles abaixo).<br>
+
+        Também há o atributo **placeholder**, que é um texto que **ficará disponível** enquanto nada for digitado nesse
+        campo. Também é importante definir um atributo **name** para cada input.<br>
+
+        - **&lt;input type=”text”&gt;** – Define um campo que receberá qualquer caractere;<br>
+        - **&lt;input type=”email”&gt;** – Define um campo que receberá caracteres e verificará se o mesmo consiste em
+        um e-mail válido;<br>
+        - **&lt;input type=”submit” value=”ENVIAR”&gt;** – Define um botão que servirá para o envio do formulário.
+        Dentro dele, podemos atribuir o value, que será o texto dentro do botão de envio.<br>
+
+        Existem outros tipos de **&lt;inputs&gt;** que podem ser estudados na **[documentação disponível pela W3C] <a
+            href="https://www.w3schools.com/tags/tag_input.asp">//www.w3schools.com/tags/tag_input.asp)**.</a>
+    </p>
+    <h1 id="T7">As tags &lt;textarea&gt;&lt;/textarea&gt;</h1>
+    <p>
+        Assim como a tag **&lt;input&gt;**, essa tag define um campo para o formulário. Porém, diferentemente, ela tem
+        como principal característica ser uma área de preenchimento de texto, ou seja, permite que o usuário escreva um
+        texto ou uma mensagem no seu interior. Também traz opções para que o usuário redimensione seu tamanho (resize).
+        Dessa forma, podemos incluir uma area de texto utilizando as tags **&lt;textarea&gt;** e **&lt;/textarea&gt;**.
+    </p>
+    </p>
+    <h1 id="T8"> Tags de estilos e scripts</h1>
+    <p>
+        Para podermos concluir, não poderíamos deixar de citar as tags **&lt;style&gt;** e **&lt;script&gt;**.
+
+        A tag **&lt;style&gt;** e **&lt;/style&gt;** deve ser incluída no **&lt;head&gt;** do seu código HTML. Dentro
+        dessa tag, é possível incluir todo o seu código CSS, ou seja, seu código de estilos.
+
+        Já a tag **&lt;script&gt;** e **&lt;/script&gt;** tem como objetivo incluir códigos de scripts ao seu HTML,
+        podendo ser incluída em qualquer parte. Contudo, recomenda-se fortemente que seja inserida após
+        o **&lt;footer&gt;**. Dessa forma, podemos incluir nela um código javascript.
+    </p>
+</body>
+
+</html>
